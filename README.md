@@ -168,6 +168,23 @@ Example - 10110001 will _load_ (1011) the operand 1 (0001) to the accumulator.
 - **OUTPUT** -0000
 - **HALT** - 0100
 
+### Images
+
+![FPGA in Idle Mode](./images/fpga-idle.jpeg)
+_FPGA in Idle Mode._
+
+<hr>
+
+![Programming the RAM](./images/fpga-programming.jpeg)
+_Programming the RAM._
+
+<hr>
+
+![After running the computer program stored in the RAM.](./images/fpga-output.jpeg)
+_After running the computer program stored in the RAM._
+
+<hr>
+
 ## Learn More
 
 - #### Reference 1
