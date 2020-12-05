@@ -117,5 +117,15 @@ _7-Segment Display Driver for Hex Display. Required to convert 4 bit binary numb
 ![Overall System](./images/Main.png)
 _Overall System_
 
-<hr
->
+<hr>
+
+## Implementation Process
+
+To implement the SAP-1 computer, a Basys 3 Field Programmable Gate Array (FPGA) was used. FPGAs are integrated circuits designed to be configured by a customer or a designer after manufacturing. FPGAs are predominantly programmed using HDLs (hardware description languages). For this project, the hardware description language used was VHDL.
+
+VHDL stands for VHSIC (Very High Speed Integrated Circuit) Hardware Description Language and is one of the most common hardware description languages. Hardware description languages are used to “describe” digital hardware. They are similar but fundamentally different from high-level programming languages. While high-level software code specifies a sequence of operations, HDL code is more like a schematic that uses text to introduce components and create interconnections. Learn more about VHDL with [reference #3](./) and [reference #4].
+
+The Basys 3 is an entry-level FPGA development board designed exclusively for Vivado Design Suite, featuring Xilinx Artix-7 FPGA architecture. Vivado is a design environment for Xilinx FPGA products and is closely linked to such chip architecture and can not be used with FPGA goods of other vendors. To write HDL code to run on the Basys 3, [Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html) had to be first installed and a new project created. Vivado's [getting started guide](https://reference.digilentinc.com/vivado/getting_started_tutorial/start) walks you through the entire process of creating/opening a project, down to programming the device with the code you've written. The [Vivado project for the SAP-1 Computer](./SAP1_VIVADO_PROJECT_FOLDER) is included in this repository for ease of use. VHDL code written for each component can be found in the [src directory](./SAP1_VIVADO_PROJECT_FOLDER/SAP1.srcs/sources_1).
+
+![Basys 3 FPGA](./images/basys-3.png)
+_Basys 3 FPGA_
