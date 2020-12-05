@@ -8,11 +8,14 @@ In this project, I together with a group of people implement a SAP-1 computer us
 
 ## Table of Content
 
-- [SAP-1 Computer Architecture](#sap-1-computer-architecture)
-- [Design Process](#design-process)
-- [Implementation Process](#implementation-process)
-- [Result](#result)
-- [Learn more about SAP computers](#learn-more-about-sap-computers)
+1. [SAP-1 Computer Architecture](#sap-1-computer-architecture)
+   - [SAP-1 Components](#sap-1-components)
+   - [SAP-1 Instruction Set](#sap-1-instruction-set)
+2. [Design Process](#design-process)
+   - [Logisim Design Images](#logisim-design-images)
+3. [Implementation Process](#implementation-process)
+4. [Result](#result)
+5. [Learn more about SAP computers](#learn-more-about-sap-computers)
 
 ## SAP-1 Computer Architecture
 
@@ -60,6 +63,8 @@ For more details about programming the SAP-1 and the fetch and execution cycle o
 ## Design Process
 
 To build the SAP-1 computer, circuit diagrams were designed for each component. These component were then integrated into one system using buses. Each circuit diagram was designed and simulated with [Logisim](http://www.cburch.com/logisim/), a tool for designing and simulating logic circuits. The [logisim design file can be found here](./logisim_design.circ).
+
+### Logisim Design Images
 
 ![Program Counter](./images/PC.png)
 _Program Counter_
