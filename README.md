@@ -15,6 +15,8 @@ In this project, I together with a group of people implement a SAP-1 computer us
    - [Logisim Design Images](#logisim-design-images)
 3. [Implementation Process](#implementation-process)
 4. [Results](#results)
+   - [Programmed FPGA](#programmed-fpga)
+   - [Operation Codes](#operation-codes)
 5. [Learn More](#learn-more)
    - [Reference 1](#reference-1)
    - [Reference 2](#reference-2)
@@ -136,6 +138,8 @@ _Basys 3 FPGA_
 
 ## Results
 
+### Programmed FPGA
+
 The result of sucessfully implementing the SAP-1 by programming the FPGA using VHDL is shown using the image below.
 
 ![Programmed FPGA](./images/programmed-fpga.png)
@@ -149,6 +153,18 @@ _Programmed FPGA_
 6. **RAM address switches** - These 4 switches selects a RAM location to perform an action on. 4 switches represent 4 bits (0000 - 1111) to select any of the 16 RAM locations.
 7. **RAM data switches** - These 8 switches are used to specify data/instructions to write into any RAM location. 8 switches indicate that 8 bit data can be inserted into a RAM location; binary (00000000 - 111111) or hex (00 - FF). The first four bits specify the operation and the last 4 specify the operand.
 8. **HEX display** - Displays output to the user. The first two digits show the selected RAM location. The last two digits display the value stored in the selected RAM location or the result from the output register after running a program.
+
+### Operation Codes
+
+Each operation in the SAP-1's instruction set have been mapped to 4 bits. These 4 bits make up the first 4 of the total 8 bits that are stored in each RAM location. The last 4 bits specify the operand which the operation will act on.
+
+Example - 10110001 will _load_ (1011) the operand 1 (0001) to the accumulator.
+
+- **LOAD** - 1011
+- **ADD** - 0101
+- **SUBTRACT** - 0111
+- **OUTPUT** -0000
+- **HALT** - 0100
 
 ## Learn More
 
