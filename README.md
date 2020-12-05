@@ -76,8 +76,10 @@ To build the SAP-1 computer, circuit diagrams were designed for each component. 
 _Program Counter_
 
 <hr>
+
 ![Input and Memory Address Register](./images/MAR.png)
 _Input and Memory Address Register_
+
 <hr>
 
 ![RAM](./images/PC.png)
