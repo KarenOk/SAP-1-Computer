@@ -69,32 +69,53 @@ To build the SAP-1 computer, circuit diagrams were designed for each component. 
 ![Program Counter](./images/PC.png)
 _Program Counter_
 
+<hr>
 ![Input and Memory Address Register](./images/MAR.png)
 _Input and Memory Address Register_
+<hr>
 
 ![RAM](./images/PC.png)
 _RAM_
 
+<hr>
+
 ![Instruction Register](./images/IR.png)
 _Instruction Register_
+
+<hr>
 
 ![Controller-Sequencer](./images/CS.png)
 _Controller-Sequencer with 7-segment displays to view control word in Hex_
 
+<hr>
+
 ![Accumulator](./images/Acc.png)
 _Accumulator_
+
+<hr>
 
 ![Adder/Subtractor](./images/A-S.png)
 _Adder/Subtractor_
 
+<hr>
+
 ![B-Register](./images/B-Reg.png)
 _B-Register_
+
+<hr>
 
 ![Output Register](./images/O-reg.png)
 _Output Register_
 
+<hr>
+
 ![7-Segment Display Driver for Hex Display](./images/7-seg-driver.png)
 _7-Segment Display Driver for Hex Display. Required to convert 4 bit binary numbers into more readable Hex format._
 
+<hr>
+
 ![Overall System](./images/Main.png)
 _Overall System_
+
+<hr
+>
