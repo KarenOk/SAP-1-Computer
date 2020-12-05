@@ -73,56 +73,67 @@ To build the SAP-1 computer, circuit diagrams were designed for each component. 
 ### Logisim Design Images
 
 ![Program Counter](./images/PC.png)
+<br>
 _Program Counter_
 
 <hr>
 
 ![Input and Memory Address Register](./images/MAR.png)
+<br>
 _Input and Memory Address Register_
 
 <hr>
 
 ![RAM](./images/PC.png)
+<br>
 _RAM_
 
 <hr>
 
 ![Instruction Register](./images/IR.png)
+<br>
 _Instruction Register_
 
 <hr>
 
 ![Controller-Sequencer](./images/CS.png)
+<br>
 _Controller-Sequencer with 7-segment displays to view control word in Hex_
 
 <hr>
 
 ![Accumulator](./images/Acc.png)
+<br>
 _Accumulator_
 
 <hr>
 
 ![Adder/Subtractor](./images/A-S.png)
+<br>
 _Adder/Subtractor_
 
 <hr>
 
 ![B-Register](./images/B-Reg.png)
+<br>
 _B-Register_
 
 <hr>
 
 ![Output Register](./images/O-reg.png)
+<br>
 _Output Register_
 
 <hr>
 
 ![7-Segment Display Driver for Hex Display](./images/7-seg-driver.png)
+<br>
 _7-Segment Display Driver for Hex Display. Required to convert 4 bit binary numbers into more readable Hex format._
 
 <hr>
 
 ![Overall System](./images/Main.png)
+<br>
 _Overall System_
 
 <hr>
@@ -136,6 +147,7 @@ VHDL stands for VHSIC (Very High Speed Integrated Circuit) Hardware Description 
 The Basys 3 is an entry-level FPGA development board designed exclusively for Vivado Design Suite, featuring Xilinx Artix-7 FPGA architecture. Vivado is a design environment for Xilinx FPGA products and is closely linked to such chip architecture and can not be used with FPGA goods of other vendors. To write HDL code to run on the Basys 3, [Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html) had to be first installed and a new project created. Vivado's [getting started guide](https://reference.digilentinc.com/vivado/getting_started_tutorial/start) walks you through the entire process of creating/opening a project, down to programming the device with the code you've written. The [Vivado project for the SAP-1 Computer](./SAP1_VIVADO_PROJECT_FOLDER) is included in this repository for ease of use. VHDL code written for each component can be found in the [src directory](./SAP1_VIVADO_PROJECT_FOLDER/SAP1.srcs/sources_1).
 
 ![Basys 3 FPGA](./images/basys-3.png)
+<br>
 _Basys 3 FPGA_
 
 ## Results
@@ -145,6 +157,7 @@ _Basys 3 FPGA_
 The result of sucessfully implementing the SAP-1 by programming the FPGA using VHDL is shown using the image below.
 
 ![Programmed FPGA](./images/programmed-fpga.png)
+<br>
 _Programmed FPGA_
 
 1. **Run program switch** - Flipping this switch runs the program written to the RAM.
@@ -171,16 +184,19 @@ Example - 10110001 will _load_ (1011) the operand 1 (0001) to the accumulator.
 ### Images
 
 ![FPGA in Idle Mode](./images/fpga-idle.jpeg)
+<br>
 _FPGA in Idle Mode._
 
 <hr>
 
 ![Programming the RAM](./images/fpga-programming.jpeg)
+<br>
 _Programming the RAM._
 
 <hr>
 
 ![After running the computer program stored in the RAM.](./images/fpga-output.jpeg)
+<br>
 _After running the computer program stored in the RAM._
 
 <hr>
