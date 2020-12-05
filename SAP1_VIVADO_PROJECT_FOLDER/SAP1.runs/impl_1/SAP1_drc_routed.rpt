@@ -1,0 +1,66 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Jul 23 13:30:22 2019
+| Host         : Chukwuemeka running 64-bit major release  (build 9200)
+| Command      : report_drc -file SAP1_drc_routed.rpt -pb SAP1_drc_routed.pb -rpx SAP1_drc_routed.rpx
+| Design       : SAP1
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 6          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net IR3/E[0] is a gated clock net sourced by a combinational pin IR3/W_bus_reg[3]_i_2/O, cell IR3/W_bus_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net IR3/E[1] is a gated clock net sourced by a combinational pin IR3/W_bus_reg[7]_i_2/O, cell IR3/W_bus_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net IR3/Q_tmp_reg[6]_0[0] is a gated clock net sourced by a combinational pin IR3/W_in_BR_reg[7]_i_1/O, cell IR3/W_in_BR_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net IR3/T_reg[1][0] is a gated clock net sourced by a combinational pin IR3/W_in_MAR_reg[3]_i_1/O, cell IR3/W_in_MAR_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net IR3/T_reg[6][0] is a gated clock net sourced by a combinational pin IR3/W_in_ACC_reg[7]_i_1/O, cell IR3/W_in_ACC_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net SCREEN/seven_seg_in_reg[3]_i_2_n_1 is a gated clock net sourced by a combinational pin SCREEN/seven_seg_in_reg[3]_i_2/O, cell SCREEN/seven_seg_in_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

@@ -1,0 +1,693 @@
+
+*** Running vivado
+    with args -log SAP1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SAP1.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source SAP1.tcl -notrace
+Command: synth_design -top SAP1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 794.547 ; gain = 177.871
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:52]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/ring_counter.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'SAP1' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:30]
+WARNING: [Synth 8-614] signal 'W_out_PC' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+WARNING: [Synth 8-614] signal 'W_out_RAM' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+WARNING: [Synth 8-614] signal 'W_out_IR' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+WARNING: [Synth 8-614] signal 'W_out_ACC' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+WARNING: [Synth 8-614] signal 'W_out_AS' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+WARNING: [Synth 8-614] signal 'out_reg_output' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:182]
+INFO: [Synth 8-3491] module 'Mux_4bit' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Mux_4bit.vhd:6' bound to instance 'MUX' of component 'Mux_4bit' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'Mux_4bit' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Mux_4bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux_4bit' (1#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Mux_4bit.vhd:13]
+INFO: [Synth 8-3491] module 'Program_counter' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Program_counter.vhd:7' bound to instance 'PC0' of component 'program_counter' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'Program_counter' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Program_counter.vhd:18]
+WARNING: [Synth 8-614] signal 'Pre_Q' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Program_counter.vhd:24]
+WARNING: [Synth 8-614] signal 'Q_bin' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Program_counter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Program_counter' (2#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/Program_counter.vhd:18]
+INFO: [Synth 8-3491] module 'MAR' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/MAR.vhd:7' bound to instance 'MAR1' of component 'MAR' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'MAR' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/MAR.vhd:18]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/MAR.vhd:39]
+WARNING: [Synth 8-614] signal 'Q_dup' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/MAR.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MAR' (3#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/MAR.vhd:18]
+INFO: [Synth 8-3491] module 'instruction_register' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:7' bound to instance 'IR3' of component 'instruction_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'instruction_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:20]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:43]
+WARNING: [Synth 8-614] signal 'Q_dup' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'instruction_register' (4#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_register.vhd:20]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:8' bound to instance 'RAM4' of component 'RAM' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:26]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 16 - type: integer 
+	Parameter addr bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'Enable' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:37]
+WARNING: [Synth 8-614] signal 'tmp_ram' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:37]
+WARNING: [Synth 8-614] signal 'Read_Addr' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (5#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:26]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:8' bound to instance 'RAM4_DUP' of component 'RAM' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:244]
+INFO: [Synth 8-3491] module 'controller_sequencer' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/controller_sequencer.vhd:5' bound to instance 'CS5' of component 'controller_sequencer' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'controller_sequencer' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/controller_sequencer.vhd:11]
+INFO: [Synth 8-3491] module 'ring_counter' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/ring_counter.vhd:5' bound to instance 'RC' of component 'ring_counter' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/controller_sequencer.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'ring_counter' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/ring_counter.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ring_counter' (6#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/ring_counter.vhd:10]
+INFO: [Synth 8-3491] module 'instruction_decoder' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_decoder.vhd:5' bound to instance 'ID' of component 'instruction_decoder' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/controller_sequencer.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'instruction_decoder' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_decoder.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'instruction_decoder' (7#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/instruction_decoder.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'controller_sequencer' (8#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/controller_sequencer.vhd:11]
+INFO: [Synth 8-3491] module 'accumulator' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:7' bound to instance 'ACC6' of component 'accumulator' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'accumulator' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:20]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:41]
+WARNING: [Synth 8-614] signal 'Q_dup' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:41]
+WARNING: [Synth 8-614] signal 'Q_bi' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'accumulator' (9#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/accumulator.vhd:20]
+INFO: [Synth 8-3491] module 'adder_subtractor' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/adder_subtractor.vhd:7' bound to instance 'AS7' of component 'adder_subtractor' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'adder_subtractor' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/adder_subtractor.vhd:19]
+WARNING: [Synth 8-614] signal 'S' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/adder_subtractor.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'adder_subtractor' (10#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/adder_subtractor.vhd:19]
+INFO: [Synth 8-3491] module 'b_register' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/b_register.vhd:7' bound to instance 'BR8' of component 'b_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'b_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/b_register.vhd:18]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/b_register.vhd:38]
+WARNING: [Synth 8-614] signal 'Q_dup' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/b_register.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'b_register' (11#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/b_register.vhd:18]
+INFO: [Synth 8-3491] module 'output_register' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/output_register.vhd:7' bound to instance 'OR9' of component 'output_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'output_register' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/output_register.vhd:19]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/output_register.vhd:39]
+WARNING: [Synth 8-614] signal 'Q_dup' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/output_register.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'output_register' (12#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/output_register.vhd:19]
+INFO: [Synth 8-3491] module 'seven_segment_display' declared at 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:5' bound to instance 'SCREEN' of component 'seven_segment_display' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:19]
+WARNING: [Synth 8-614] signal 'address' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:36]
+WARNING: [Synth 8-614] signal 'RAM_output' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:36]
+WARNING: [Synth 8-614] signal 'out_reg_output' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display' (13#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:19]
+WARNING: [Synth 8-614] signal 'clock_activator' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:267]
+WARNING: [Synth 8-614] signal 'selector' is read in the process but is not in the sensitivity list [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:267]
+INFO: [Synth 8-256] done synthesizing module 'SAP1' (14#1) [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:30]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[7]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[6]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[5]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[4]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[3]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[2]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[1]
+WARNING: [Synth 8-3331] design seven_segment_display has unconnected port data[0]
+WARNING: [Synth 8-3331] design SAP1 has unconnected port BTN[3]
+WARNING: [Synth 8-3331] design SAP1 has unconnected port BTN[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 855.496 ; gain = 238.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 855.496 ; gain = 238.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 855.496 ; gain = 238.820
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:253]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:253]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:266]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:266]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:275]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:275]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:277]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:278]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:278]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:287]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:287]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:290]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:290]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:292]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:292]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:293]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:293]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:302]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:302]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:313]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:313]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:314]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:314]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SAP1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SAP1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 980.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 980.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Data_out_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/RAM.vhd:43]
+WARNING: [Synth 8-327] inferring latch for variable 'seven_seg_in_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/seven_segment_display.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'W_bus_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:187]
+WARNING: [Synth 8-327] inferring latch for variable 'W_in_OR_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:211]
+WARNING: [Synth 8-327] inferring latch for variable 'W_in_ACC_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:205]
+WARNING: [Synth 8-327] inferring latch for variable 'W_in_IR_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:202]
+WARNING: [Synth 8-327] inferring latch for variable 'W_in_BR_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:208]
+WARNING: [Synth 8-327] inferring latch for variable 'W_in_MAR_reg' [C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.srcs/sources_1/new/SAP1.vhd:199]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
++---Registers : 
+	                8 Bit    Registers := 36    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 33    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SAP1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+Module Program_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module MAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module instruction_register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module ring_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module accumulator 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module adder_subtractor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
+Module b_register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module output_register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module seven_segment_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design SAP1 has unconnected port BTN[3]
+WARNING: [Synth 8-3331] design SAP1 has unconnected port BTN[0]
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_24' (LD) to 'Data_out_regi_23'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_23' (LD) to 'Data_out_regi_22'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_22' (LD) to 'Data_out_regi_21'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_21' (LD) to 'Data_out_regi_20'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_20' (LD) to 'Data_out_regi_19'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_19' (LD) to 'Data_out_regi_18'
+INFO: [Synth 8-3886] merging instance 'Data_out_regi_18' (LD) to 'Data_out_regi_17'
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[7]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[6]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[5]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[4]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[3]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[2]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[1]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4/Data_out_reg[0]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (Data_out_regi_17) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[7]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[6]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[5]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[4]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[3]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[2]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[1]) is unused and will be removed from module SAP1.
+WARNING: [Synth 8-3332] Sequential element (RAM4_DUP/Data_out_reg[0]) is unused and will be removed from module SAP1.
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][0]' (FDCE) to 'RAM4/tmp_ram_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][0]' (FDCE) to 'RAM4/tmp_ram_reg[14][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][0]' (FDCE) to 'RAM4/tmp_ram_reg[13][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][0]' (FDCE) to 'RAM4/tmp_ram_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][0]' (FDCE) to 'RAM4/tmp_ram_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][0]' (FDCE) to 'RAM4/tmp_ram_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][0]' (FDCE) to 'RAM4/tmp_ram_reg[9][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][0]' (FDCE) to 'RAM4/tmp_ram_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][0]' (FDCE) to 'RAM4/tmp_ram_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][0]' (FDCE) to 'RAM4/tmp_ram_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][0]' (FDCE) to 'RAM4/tmp_ram_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][0]' (FDCE) to 'RAM4/tmp_ram_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][0]' (FDCE) to 'RAM4/tmp_ram_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[2][0]' (FDCE) to 'RAM4/tmp_ram_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[1][0]' (FDCE) to 'RAM4/tmp_ram_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[0][0]' (FDCE) to 'RAM4/tmp_ram_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][4]' (FDCE) to 'RAM4/tmp_ram_reg[15][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][4]' (FDCE) to 'RAM4/tmp_ram_reg[14][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][4]' (FDCE) to 'RAM4/tmp_ram_reg[13][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][4]' (FDCE) to 'RAM4/tmp_ram_reg[12][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][4]' (FDCE) to 'RAM4/tmp_ram_reg[11][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][4]' (FDCE) to 'RAM4/tmp_ram_reg[10][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][4]' (FDCE) to 'RAM4/tmp_ram_reg[9][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][4]' (FDCE) to 'RAM4/tmp_ram_reg[8][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][4]' (FDCE) to 'RAM4/tmp_ram_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][4]' (FDCE) to 'RAM4/tmp_ram_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][4]' (FDCE) to 'RAM4/tmp_ram_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][4]' (FDCE) to 'RAM4/tmp_ram_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][4]' (FDCE) to 'RAM4/tmp_ram_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[2][4]' (FDCE) to 'RAM4/tmp_ram_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[1][4]' (FDCE) to 'RAM4/tmp_ram_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[0][4]' (FDCE) to 'RAM4/tmp_ram_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][1]' (FDCE) to 'RAM4/tmp_ram_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][1]' (FDCE) to 'RAM4/tmp_ram_reg[14][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][1]' (FDCE) to 'RAM4/tmp_ram_reg[13][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][1]' (FDCE) to 'RAM4/tmp_ram_reg[12][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][1]' (FDCE) to 'RAM4/tmp_ram_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][1]' (FDCE) to 'RAM4/tmp_ram_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][1]' (FDCE) to 'RAM4/tmp_ram_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][1]' (FDCE) to 'RAM4/tmp_ram_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][1]' (FDCE) to 'RAM4/tmp_ram_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][1]' (FDCE) to 'RAM4/tmp_ram_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][1]' (FDCE) to 'RAM4/tmp_ram_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][1]' (FDCE) to 'RAM4/tmp_ram_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][1]' (FDCE) to 'RAM4/tmp_ram_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[2][1]' (FDCE) to 'RAM4/tmp_ram_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[1][1]' (FDCE) to 'RAM4/tmp_ram_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[0][1]' (FDCE) to 'RAM4/tmp_ram_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][5]' (FDCE) to 'RAM4/tmp_ram_reg[15][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][5]' (FDCE) to 'RAM4/tmp_ram_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][5]' (FDCE) to 'RAM4/tmp_ram_reg[13][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][5]' (FDCE) to 'RAM4/tmp_ram_reg[12][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][5]' (FDCE) to 'RAM4/tmp_ram_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][5]' (FDCE) to 'RAM4/tmp_ram_reg[10][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][5]' (FDCE) to 'RAM4/tmp_ram_reg[9][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][5]' (FDCE) to 'RAM4/tmp_ram_reg[8][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][5]' (FDCE) to 'RAM4/tmp_ram_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][5]' (FDCE) to 'RAM4/tmp_ram_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][5]' (FDCE) to 'RAM4/tmp_ram_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][5]' (FDCE) to 'RAM4/tmp_ram_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][5]' (FDCE) to 'RAM4/tmp_ram_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[2][5]' (FDCE) to 'RAM4/tmp_ram_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[1][5]' (FDCE) to 'RAM4/tmp_ram_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[0][5]' (FDCE) to 'RAM4/tmp_ram_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][2]' (FDCE) to 'RAM4/tmp_ram_reg[15][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][2]' (FDCE) to 'RAM4/tmp_ram_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][2]' (FDCE) to 'RAM4/tmp_ram_reg[13][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][2]' (FDCE) to 'RAM4/tmp_ram_reg[12][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][2]' (FDCE) to 'RAM4/tmp_ram_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][2]' (FDCE) to 'RAM4/tmp_ram_reg[10][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][2]' (FDCE) to 'RAM4/tmp_ram_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][2]' (FDCE) to 'RAM4/tmp_ram_reg[8][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][2]' (FDCE) to 'RAM4/tmp_ram_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][2]' (FDCE) to 'RAM4/tmp_ram_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][2]' (FDCE) to 'RAM4/tmp_ram_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][2]' (FDCE) to 'RAM4/tmp_ram_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][2]' (FDCE) to 'RAM4/tmp_ram_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[2][2]' (FDCE) to 'RAM4/tmp_ram_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[1][2]' (FDCE) to 'RAM4/tmp_ram_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[0][2]' (FDCE) to 'RAM4/tmp_ram_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[15][6]' (FDCE) to 'RAM4/tmp_ram_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[14][6]' (FDCE) to 'RAM4/tmp_ram_reg[14][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[13][6]' (FDCE) to 'RAM4/tmp_ram_reg[13][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[12][6]' (FDCE) to 'RAM4/tmp_ram_reg[12][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[11][6]' (FDCE) to 'RAM4/tmp_ram_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[10][6]' (FDCE) to 'RAM4/tmp_ram_reg[10][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[9][6]' (FDCE) to 'RAM4/tmp_ram_reg[9][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[8][6]' (FDCE) to 'RAM4/tmp_ram_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[7][6]' (FDCE) to 'RAM4/tmp_ram_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[6][6]' (FDCE) to 'RAM4/tmp_ram_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[5][6]' (FDCE) to 'RAM4/tmp_ram_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[4][6]' (FDCE) to 'RAM4/tmp_ram_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'RAM4_DUP/tmp_ram_reg[3][6]' (FDCE) to 'RAM4/tmp_ram_reg[3][6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 980.188 ; gain = 363.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 980.750 ; gain = 364.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     3|
+|4     |LUT2   |    46|
+|5     |LUT3   |    20|
+|6     |LUT4   |    13|
+|7     |LUT5   |    49|
+|8     |LUT6   |    92|
+|9     |MUXF7  |    16|
+|10    |MUXF8  |     7|
+|11    |FDCE   |   168|
+|12    |FDRE   |    49|
+|13    |LD     |    48|
+|14    |IBUF   |    20|
+|15    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------------------+------+
+|      |Instance |Module                |Cells |
++------+---------+----------------------+------+
+|1     |top      |                      |   573|
+|2     |  ACC6   |accumulator           |    20|
+|3     |  BR8    |b_register            |    23|
+|4     |  CS5    |controller_sequencer  |    14|
+|5     |    RC   |ring_counter          |    14|
+|6     |  IR3    |instruction_register  |    37|
+|7     |  MAR1   |MAR                   |    24|
+|8     |  OR9    |output_register       |    20|
+|9     |  PC0    |Program_counter       |    16|
+|10    |  RAM4   |RAM                   |   236|
+|11    |  SCREEN |seven_segment_display |    49|
++------+---------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 987.539 ; gain = 246.172
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 987.539 ; gain = 370.863
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1002.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  LD => LDCE: 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+155 Infos, 105 Warnings, 38 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1002.027 ; gain = 645.457
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.027 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CAChukwulobe/Documents/Vivado_Project_1/SAP1/SAP1_FINAL/SAP1.runs/synth_1/SAP1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SAP1_utilization_synth.rpt -pb SAP1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 13:28:59 2019...

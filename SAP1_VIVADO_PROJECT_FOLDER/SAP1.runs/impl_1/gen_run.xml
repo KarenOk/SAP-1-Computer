@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1563884885">
+  <File Type="BITSTR-BMM" Name="SAP1_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SAP1_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SAP1_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="SAP1_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SAP1.tcl"/>
+  <File Type="OPT-TIMING" Name="SAP1_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SAP1_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="SAP1_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SAP1_reports.tcl"/>
+  <File Type="OPT-DRC" Name="SAP1_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SAP1.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SAP1_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SAP1_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SAP1_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SAP1_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SAP1_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SAP1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SAP1_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SAP1_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SAP1_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SAP1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SAP1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="SAP1.bgn"/>
+  <File Type="PLACE-TIMING" Name="SAP1_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SAP1_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="SAP1.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SAP1_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SAP1_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SAP1_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="SAP1.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="SAP1_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SAP1_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SAP1_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SAP1_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SAP1_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SAP1_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SAP1.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="SAP1_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="SAP1.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SAP1_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SAP1_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="SAP1.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SAP1_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="SAP1_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="SAP1_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SAP1_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SAP1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SAP1_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SAP1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SAP1_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SAP1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SAP1_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SAP1_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SAP1_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SAP1_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SAP1_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SAP1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SAP1_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SAP1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SAP1_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SAP1_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="SAP1.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SAP1_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="SAP1.rbt"/>
+  <File Type="BITSTR-NKY" Name="SAP1.nky"/>
+  <File Type="BG-DRC" Name="SAP1.drc"/>
+  <File Type="RDI-RDI" Name="SAP1.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/MAR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Program_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/accumulator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder_subtractor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/b_register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controller_sequencer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instruction_decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instruction_register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/output_register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ring_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_segment_display.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SAP1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SAP1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3-master/Basys3-master/Projects/GPIO/src/constraints/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1562163619"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

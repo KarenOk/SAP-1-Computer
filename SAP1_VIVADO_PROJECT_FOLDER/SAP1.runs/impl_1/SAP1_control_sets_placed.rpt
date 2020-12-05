@@ -1,0 +1,111 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Jul 23 13:29:51 2019
+| Host         : Chukwuemeka running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SAP1_control_sets_placed.rpt
+| Design       : SAP1
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    39 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    24 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              92 |           29 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             168 |           57 |
+| Yes          | Yes                   | No                     |               5 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+-----------------------+-----------------------------+------------------+----------------+
+|             Clock Signal            |     Enable Signal     |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-------------------------------------+-----------------------+-----------------------------+------------------+----------------+
+|  clock_BUFG                         |                       |                             |                1 |              1 |
+| ~clock_BUFG                         | CS5/RC/T_reg[2]_0     | BTN_IBUF[4]                 |                2 |              4 |
+|  clock_BUFG                         | IR3/T_reg[1][0]       | BTN_IBUF[4]                 |                1 |              4 |
+|  IR3/E[1]                           |                       |                             |                1 |              4 |
+|  IR3/E[0]                           |                       |                             |                1 |              4 |
+|  IR3/T_reg[1][0]                    |                       |                             |                1 |              4 |
+|  SCREEN/seven_seg_in_reg[3]_i_2_n_1 |                       |                             |                1 |              4 |
+|  clock_BUFG                         | CS5/RC/T[6]_i_2_n_1   | CS5/RC/T[6]_i_1_n_1         |                1 |              5 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[2]_2   | RAM4/tmp_ram[15][0]_i_2_n_1 |                1 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[2]_0   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_1   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_6   | RAM4/tmp_ram[15][0]_i_2_n_1 |                3 |              8 |
+|  n_0_236_BUFG                       | MAR1/SW[15]_0         | RAM4/tmp_ram[15][0]_i_2_n_1 |                7 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[0]_0   | RAM4/tmp_ram[15][0]_i_2_n_1 |                3 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_8   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_0   | RAM4/tmp_ram[15][0]_i_2_n_1 |                4 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[2]_1   | RAM4/tmp_ram[15][0]_i_2_n_1 |                4 |              8 |
+|  n_0_236_BUFG                       | MAR1/SW[15]           | RAM4/tmp_ram[15][0]_i_2_n_1 |                1 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_4   | RAM4/tmp_ram[15][0]_i_2_n_1 |                3 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_5   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_7   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  n_0_236_BUFG                       | MAR1/SW[15]_1         | RAM4/tmp_ram[15][0]_i_2_n_1 |                1 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_2   | RAM4/tmp_ram[15][0]_i_2_n_1 |                5 |              8 |
+|  n_0_236_BUFG                       | MAR1/Q_tmp_reg[1]_3   | RAM4/tmp_ram[15][0]_i_2_n_1 |                2 |              8 |
+|  CS5/RC/T_reg[3]_0                  |                       |                             |                3 |              8 |
+|  clock_BUFG                         | CS5/RC/T_reg[3]_0     | BTN_IBUF[4]                 |                2 |              8 |
+|  clock_BUFG                         | IR3/T_reg[6][0]       | BTN_IBUF[4]                 |                3 |              8 |
+|  IR3/T_reg[6][0]                    |                       |                             |                3 |              8 |
+|  IR3/Q_tmp_reg[6]_0[0]              |                       |                             |                3 |              8 |
+|  clock_BUFG                         | IR3/Q_tmp_reg[6]_0[0] | BTN_IBUF[4]                 |                3 |              8 |
+|  clock_BUFG                         | Ea_BUFG               | BTN_IBUF[4]                 |                2 |              8 |
+|  Ea_BUFG                            |                       |                             |                4 |              8 |
+|  CLK_IBUF_BUFG                      |                       |                             |               11 |             43 |
++-------------------------------------+-----------------------+-----------------------------+------------------+----------------+
+
+
