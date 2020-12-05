@@ -163,7 +163,7 @@ _Programmed FPGA_
 1. **Run program switch** - Flipping this switch runs the program written to the RAM.
 2. **Display RAM value switch** - Display the value currently in a specified RAM location using the HEX display. The location in the RAM is specified using the RAM address switches (#6)
 3. **Write to RAM button** - This button writes whatever value is specified by the RAM data switches (#7) to a specific RAM location. The location in the RAM this data is written to is specified using the RAM address switches (#6)
-4. **RESET SAP-1 button** - Reset the SAP-1. Clear RAM and registers.
+4. **Reset SAP-1 button** - Reset the SAP-1. Clear RAM and registers.
 5. **Clear RAM button** - Clear data written in the RAM. Clears data in all RAM locations.
 6. **RAM address switches** - These 4 switches selects a RAM location to perform an action on. 4 switches represent 4 bits (0000 - 1111) to select any of the 16 RAM locations.
 7. **RAM data switches** - These 8 switches are used to specify data/instructions to write into any RAM location. 8 switches indicate that 8 bit data can be inserted into a RAM location; binary (00000000 - 111111) or hex (00 - FF). The first four bits specify the operation and the last 4 specify the operand.
@@ -195,9 +195,9 @@ _Programming the RAM._
 
 <hr>
 
-![After running the computer program stored in the RAM.](./images/fpga-output.jpeg)
+![Output after running the computer program stored in the RAM.](./images/fpga-output.jpeg)
 <br>
-_After running the computer program stored in the RAM._
+_Output after running the computer program stored in the RAM._
 
 <hr>
 
