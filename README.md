@@ -4,7 +4,7 @@ Simple as Possible (SAP) computers in general were designed to introduce beginne
 
 The SAP-1 computer is the first stage in this evolution and contains the basic necessities for a functional computer. Its primary purpose is to develop a basic understanding of how a computer works, interacts with memory and other parts of the system like input and output. The instruction set is very limited and is simple.
 
-In this project, I together with a group of people implement a SAP-1 computer using an FPGA (Field Programmable Gate Array) - an integrated circuit designed to be configured by a customer or a designer after manufacturing - and the FPGA programmed using VHDL (VHSIC-HDL, Very High Speed Integrated Circuit Hardware Description Language). [The collated report about this project can be found in this document](https://drive.google.com/file/d/17fH-JBU5OX_4AG123AO47y879YxzmDwX/view?usp=sharing).
+In this project, I together with a group of people implement a SAP-1 computer using an FPGA (Field Programmable Gate Array) - an integrated circuit designed to be configured by a customer or a designer after manufacturing - and the FPGA programmed using VHDL (VHSIC-HDL, Very High Speed Integrated Circuit Hardware Description Language).
 
 ## Table of Content
 
@@ -14,8 +14,12 @@ In this project, I together with a group of people implement a SAP-1 computer us
 2. [Design Process](#design-process)
    - [Logisim Design Images](#logisim-design-images)
 3. [Implementation Process](#implementation-process)
-4. [Result](#result)
-5. [Learn more about SAP computers](#learn-more-about-sap-computers)
+4. [Results](#results)
+5. [Learn More](#learn-more)
+   - [Reference 1](#reference-1)
+   - [Reference 2](#reference-2)
+   - [Reference 3](#reference-3)
+   - [Reference 4](#reference-4)
 
 ## SAP-1 Computer Architecture
 
@@ -58,7 +62,7 @@ The instruction set of a computer are the basic operations it can perform. The i
 | Output    | Load data from accumulator to the output register       |
 | Halt      | Stop processing                                         |
 
-For more details about programming the SAP-1 and the fetch and execution cycle of the SAP-1, check out [reference #1 in the Learn More section](#learn-more-about-sap-computers)
+For more details about programming the SAP-1 and the fetch and execution cycle of the SAP-1, check out [reference #1 in the Learn More section](#reference-1)
 
 ## Design Process
 
@@ -123,7 +127,7 @@ _Overall System_
 
 To implement the SAP-1 computer, a Basys 3 Field Programmable Gate Array (FPGA) was used. FPGAs are integrated circuits designed to be configured by a customer or a designer after manufacturing. FPGAs are predominantly programmed using HDLs (hardware description languages). For this project, the hardware description language used was VHDL.
 
-VHDL stands for VHSIC (Very High Speed Integrated Circuit) Hardware Description Language and is one of the most common hardware description languages. Hardware description languages are used to “describe” digital hardware. They are similar but fundamentally different from high-level programming languages. While high-level software code specifies a sequence of operations, HDL code is more like a schematic that uses text to introduce components and create interconnections. Learn more about VHDL with [reference #3](./) and [reference #4].
+VHDL stands for VHSIC (Very High Speed Integrated Circuit) Hardware Description Language and is one of the most common hardware description languages. Hardware description languages are used to “describe” digital hardware. They are similar but fundamentally different from high-level programming languages. While high-level software code specifies a sequence of operations, HDL code is more like a schematic that uses text to introduce components and create interconnections. [Learn more about VHDL](#learn-more).
 
 The Basys 3 is an entry-level FPGA development board designed exclusively for Vivado Design Suite, featuring Xilinx Artix-7 FPGA architecture. Vivado is a design environment for Xilinx FPGA products and is closely linked to such chip architecture and can not be used with FPGA goods of other vendors. To write HDL code to run on the Basys 3, [Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html) had to be first installed and a new project created. Vivado's [getting started guide](https://reference.digilentinc.com/vivado/getting_started_tutorial/start) walks you through the entire process of creating/opening a project, down to programming the device with the code you've written. The [Vivado project for the SAP-1 Computer](./SAP1_VIVADO_PROJECT_FOLDER) is included in this repository for ease of use. VHDL code written for each component can be found in the [src directory](./SAP1_VIVADO_PROJECT_FOLDER/SAP1.srcs/sources_1).
 
@@ -143,5 +147,21 @@ _Programmed FPGA_
 4. **RESET SAP-1 button** - Reset the SAP-1. Clear RAM and registers.
 5. **Clear RAM button** - Clear data written in the RAM. Clears data in all RAM locations.
 6. **RAM address switches** - These 4 switches selects a RAM location to perform an action on. 4 switches represent 4 bits (0000 - 1111) to select any of the 16 RAM locations.
-7. **RAM data switches** - These 8 switches are used to specify data to write into the RAM. 8 switches indicate that 8 bit data can be inserted in any RAM location; binary (00000000 - 111111) or hex (00 - FF). The first four bits specify the operation and the last 4 specify the operand.
-8. **HEX display** - Displays output to the user.
+7. **RAM data switches** - These 8 switches are used to specify data/instructions to write into any RAM location. 8 switches indicate that 8 bit data can be inserted into a RAM location; binary (00000000 - 111111) or hex (00 - FF). The first four bits specify the operation and the last 4 specify the operand.
+8. **HEX display** - Displays output to the user. The first two digits show the selected RAM location. The last two digits display the value stored in the selected RAM location or the result from the output register after running a program.
+
+## Learn More
+
+- #### Reference 1
+  [Digital Computer Electronics by Albert Paul Malvino, _page 140_](https://drive.google.com/file/d/1g9VK7DQuiCMUlins-J77bPicDu4BEXPz/view?usp=sharing) ]
+- #### Reference 2
+
+  [Collated Project Report](https://drive.google.com/file/d/17fH-JBU5OX_4AG123AO47y879YxzmDwX/view?usp=sharing)
+
+- #### Reference 3
+
+  [VHDL Tutorial by Jan Van der Spiegel ](https://www.seas.upenn.edu/~ese171/vhdl/vhdl_primer.html)
+
+- #### Reference 4
+
+  [What Is VHDL? Getting Started with Hardware Description Language for Digital Circuit Design](https://www.allaboutcircuits.com/technical-articles/hardware-description-langauge-getting-started-vhdl-digital-circuit-design/)
