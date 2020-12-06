@@ -1,0 +1,3 @@
+*.vhd linguist-detectable=true
+*.html linguist-detectable=false
+*.htm inguist-detectable=false
